@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>𝐒𝐤𝐢𝐧𝐜𝐚𝐫𝐞 𝐒𝐡𝐨𝐩</h1>
+        <ul>
+            <li><a href="#" onclick="tampilkanHalaman('home')" id="nav-home" class="aktif">𝐇𝐨𝐦𝐞</a></li>
+            <li><a href="#" onclick="tampilkanHalaman('produk')" id="nav-produk">𝐏𝐫𝐨𝐝𝐮𝐤</a></li>
+            <li><a href="#" onclick="tampilkanHalaman('struk')" id="nav-struk">𝐒𝐭𝐫𝐮𝐤</a></li>
+        </ul>
+    </nav>
+
+    <!-- Halaman Home -->
+    <section id="home" class="halaman aktif">
+        <div class="container">
+            <h1 class="judul">𝗦𝗲𝗹𝗮𝗺𝗮𝘁 𝗗𝗮𝘁𝗮𝗻𝗴 𝗱𝗶 <b>𝐒𝐤𝐢𝐧𝐜𝐚𝐫𝐞 𝐒𝐡𝐨𝐩</b> </h1>
+            <p class="deskripsi">𝘛𝘦𝘮𝘶𝘬𝘢𝘯 𝘱𝘳𝘰𝘥𝘶𝘬 𝘱𝘦𝘳𝘢𝘸𝘢𝘵𝘢𝘯 𝘬𝘶𝘭𝘪𝘵 𝘵𝘦𝘳𝘣𝘢𝘪𝘬 𝘥𝘪 𝘴𝘪𝘯𝘪!</p>
+        </div>
+    </section>
+
+    <!-- Halaman Produk -->
+    <section id="produk" class="halaman">
+        <h2>𝐏𝐫𝐨𝐝𝐮𝐤 𝐒𝐤𝐢𝐧𝐜𝐚𝐫𝐞</h2>
+        <div class="produk-container">
+            <div class="item">
+                <img src="img/skincare1.jpg" alt="Serum Wajah">
+                <h3>Moisturizer</h3>
+                <p>Membantu kelembapan kulit, Melindungi kulit, dan Merawat kulit.</p>
+                <p class="harga">Rp 150.000</p>
+                <button onclick="tambahKeKeranjang('Serum Wajah', 150000)">ᴛᴀᴍʙᴀʜ ᴋᴇ ᴋᴇʀᴀɴᴊᴀɴɢ</button>
+            </div>
+            
+            <div class="item">
+                <img src="img/skincare2.jpg" alt="Toner Wajah">
+                <h3>Masker</h3>
+                <p>Mencerahkan kulit, Menyerap minyak berlebihan dan kotoran.</p>
+                <p class="harga">Rp 120.000</p>
+                <button onclick="tambahKeKeranjang('Toner Wajah', 120000)">ᴛᴀᴍʙᴀʜ ᴋᴇ ᴋᴇʀᴀɴᴊᴀɴɢ</button>
+            </div>
+            
+            <div class="item">
+                <img src="img/skincare3.jpg" alt="Moisturizer">
+                <h3>Serum</h3>
+                <p>Mencerahkan kulit, Mengatasi jerawat, dan Menyamarkan noda hitam.</p>
+                <p class="harga">Rp 140.000</p>
+                <button onclick="tambahKeKeranjang('Moisturizer', 140000)">ᴛᴀᴍʙᴀʜ ᴋᴇ ᴋᴇʀᴀɴᴊᴀɴɢ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halaman Struk -->
+    <section id="struk" class="halaman">
+        <h2>Struk Pembelian</h2>
+        <form id="form-pemesanan">
+            <label>Nama:</label>
+            <input type="text" id="nama" required><br>
+
+            <label>Alamat:</label>
+            <input type="text" id="alamat" required><br>
+
+            <label>Metode Pembayaran:</label>
+            <select id="pembayaran">
+                <option value="COD">COD</option>
+                <option value="QRIS">QRIS</option>
+            </select><br>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+        <h3>Detail Pesanan:</h3>
+        <ul id="list-struk"></ul>
+        <p>Total: <span id="total-harga">Rp 0</span></p>
+    </section>
+
+    <footer>
+        <p>ᴀʟᴀᴍᴀᴛ: ᴊʟ. ɢᴀᴍᴏɴ ɴᴏ. 123, ꜱᴜʀᴀʙᴀʏᴀ</p>
+        <p>ɴᴏ ᴀᴅᴍɪɴ: 081231192475</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
