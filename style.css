@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff69b4;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+nav ul li a.aktif {
+    border-bottom: 3px solid white;
+}
+
+.judul {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#list-struk {
+    list-style: none;
+    padding: 0;
+}
+
+#list-struk li {
+    background: white;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.halaman {
+    display: none;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.halaman.aktif {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.produk-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #f0789e;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Biar konten di tengah halaman */
+    text-align: center; /* Biar teks rata tengah */
+}
+
+#form-pemesanan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    width: 300px;
+    margin: auto;
+}
+
+#form-pemesanan label {
+    font-weight: bold;
+}
+
+#form-pemesanan input, #form-pemesanan select, #form-pemesanan button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#detail-pesanan {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+    max-width: 400px;
+    position: right;
+    top: -100px;
+}
+
+#struk {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -80pxpx; /* Sesuaikan jaraknya agar tidak bertumpuk */
+    padding: 10px; 
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#struk h2 {
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+}
